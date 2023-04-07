@@ -1,0 +1,38 @@
+<div *ngIf="hero">
+
+    <br/>
+    <h2>{{hero.name | uppercase}} DETAILS</h2>
+    <div><span style="font-weight: bold;">ID: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Hero Name: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <br/>
+    <div>
+      <label for="hero-power">Hero Power: </label>
+      <input id="hero-power" [(ngModel)]="hero.power" placeholder="power">
+    </div>
+    <br/>
+    <div>
+      <label for="hero-alterEgo">Hero AlterEgo: </label>
+      <input id="hero-alterEgo" [(ngModel)]="hero.alterEgo" placeholder="alterEgo">
+    </div>
+    <br/>
+    <div>
+      <label for="hero-life">Hero Life: </label>
+      <input id="hero-life" [(ngModel)]="hero.life" placeholder="life">
+    </div>
+    <br/>
+    <div>
+      <label for="hero-attack">Hero Attack: </label>
+      <input id="hero-attack" [(ngModel)]="hero.attack" placeholder="attack">
+    </div>
+    <br/>
+    <div>
+      <label for="hero-defense">Hero Defense: </label>
+      <input id="hero-defense" [(ngModel)]="hero.def" placeholder="defense">
+    </div>
+    <button type="button" (click)="goBack()">Go Back</button>
+    <button type="button" (click)="save()">Save</button>
+  </div>
+
